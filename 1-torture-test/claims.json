@@ -1,0 +1,810 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-02-10",
+    "description": "100 curated claims for LLM fact-checking evaluation",
+    "categories": ["science", "health", "politics", "history", "current_events", "edge_cases"]
+  },
+  "claims": [
+    {
+      "id": 1,
+      "text": "Water boils at 100 degrees Celsius at sea level.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Basic physics fact"
+    },
+    {
+      "id": 2,
+      "text": "The Great Wall of China is visible from space with the naked eye.",
+      "label": false,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "Common myth - debunked by astronauts"
+    },
+    {
+      "id": 3,
+      "text": "Humans only use 10% of their brain.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Popular myth - brain imaging shows all regions active"
+    },
+    {
+      "id": 4,
+      "text": "The Earth is approximately 4.5 billion years old.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Scientific consensus"
+    },
+    {
+      "id": 5,
+      "text": "Vaccines cause autism.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "Thoroughly debunked - original study retracted"
+    },
+    {
+      "id": 6,
+      "text": "Einstein failed math in school.",
+      "label": false,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "Common myth - he excelled in math"
+    },
+    {
+      "id": 7,
+      "text": "Goldfish have a memory span of only 3 seconds.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Myth - goldfish can remember for months"
+    },
+    {
+      "id": 8,
+      "text": "Lightning never strikes the same place twice.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Myth - tall structures are struck repeatedly"
+    },
+    {
+      "id": 9,
+      "text": "The human body contains about 206 bones in adulthood.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Standard anatomy"
+    },
+    {
+      "id": 10,
+      "text": "Mount Everest is the tallest mountain on Earth.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "True for height above sea level (8,849m)"
+    },
+    {
+      "id": 11,
+      "text": "Antibiotics are effective against viral infections.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Antibiotics only work against bacteria"
+    },
+    {
+      "id": 12,
+      "text": "The speed of light is approximately 299,792 kilometers per second.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Physics constant"
+    },
+    {
+      "id": 13,
+      "text": "Cracking your knuckles causes arthritis.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Multiple studies show no connection"
+    },
+    {
+      "id": 14,
+      "text": "The Amazon rainforest produces 20% of the world's oxygen.",
+      "label": false,
+      "category": "science",
+      "difficulty": "hard",
+      "notes": "Edge case - technically misleading, net oxygen contribution is near zero"
+    },
+    {
+      "id": 15,
+      "text": "Napoleon Bonaparte was unusually short for his time.",
+      "label": false,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "He was 5'7\" - average for the era"
+    },
+    {
+      "id": 16,
+      "text": "The Declaration of Independence was signed on July 4, 1776.",
+      "label": false,
+      "category": "history",
+      "difficulty": "hard",
+      "notes": "Edge case - most signatures were August 2, 1776"
+    },
+    {
+      "id": 17,
+      "text": "Bats are blind.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Bats can see - they also use echolocation"
+    },
+    {
+      "id": 18,
+      "text": "The Sahara Desert is the largest desert on Earth.",
+      "label": false,
+      "category": "science",
+      "difficulty": "hard",
+      "notes": "Antarctica is larger (it's a cold desert)"
+    },
+    {
+      "id": 19,
+      "text": "DNA was first discovered in 1953 by Watson and Crick.",
+      "label": false,
+      "category": "science",
+      "difficulty": "hard",
+      "notes": "DNA discovered 1869 by Miescher; Watson/Crick found structure"
+    },
+    {
+      "id": 20,
+      "text": "The Moon has no gravity.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Moon has about 1/6 Earth's gravity"
+    },
+    {
+      "id": 21,
+      "text": "Sugar causes hyperactivity in children.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Multiple studies show no causal link"
+    },
+    {
+      "id": 22,
+      "text": "The human heart is located on the left side of the chest.",
+      "label": false,
+      "category": "health",
+      "difficulty": "hard",
+      "notes": "Edge case - heart is mostly centered, slightly left"
+    },
+    {
+      "id": 23,
+      "text": "Birds are descendants of dinosaurs.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Scientific consensus - birds are living dinosaurs"
+    },
+    {
+      "id": 24,
+      "text": "The tongue has specific zones for different tastes.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Tongue map is a myth - all areas sense all tastes"
+    },
+    {
+      "id": 25,
+      "text": "Venus is the hottest planet in our solar system.",
+      "label": true,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Despite not being closest to Sun - greenhouse effect"
+    },
+    {
+      "id": 26,
+      "text": "The flu vaccine can give you the flu.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Inactivated vaccines cannot cause infection"
+    },
+    {
+      "id": 27,
+      "text": "Christopher Columbus discovered America.",
+      "label": false,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "Vikings arrived earlier; Indigenous peoples were there first"
+    },
+    {
+      "id": 28,
+      "text": "Chameleons change color to blend with their surroundings.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Color change is mainly for temperature/communication"
+    },
+    {
+      "id": 29,
+      "text": "The Pythagorean theorem states that a² + b² = c² for right triangles.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Mathematical theorem"
+    },
+    {
+      "id": 30,
+      "text": "George Washington had wooden teeth.",
+      "label": false,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "His dentures were made of ivory, metal, and human teeth"
+    },
+    {
+      "id": 31,
+      "text": "Drinking 8 glasses of water a day is scientifically necessary for health.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "No scientific basis - needs vary by individual"
+    },
+    {
+      "id": 32,
+      "text": "The Berlin Wall fell in 1989.",
+      "label": true,
+      "category": "history",
+      "difficulty": "easy",
+      "notes": "November 9, 1989"
+    },
+    {
+      "id": 33,
+      "text": "Bulls are angered by the color red.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Bulls are colorblind to red - react to movement"
+    },
+    {
+      "id": 34,
+      "text": "Pluto is classified as a planet.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Reclassified as dwarf planet in 2006"
+    },
+    {
+      "id": 35,
+      "text": "Reading in dim light permanently damages your eyes.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "May cause temporary strain, not permanent damage"
+    },
+    {
+      "id": 36,
+      "text": "The Titanic was described as 'unsinkable' before it sank.",
+      "label": true,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "True - widely promoted as unsinkable"
+    },
+    {
+      "id": 37,
+      "text": "Hair and fingernails continue to grow after death.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Skin dehydrates making them appear longer"
+    },
+    {
+      "id": 38,
+      "text": "The Mona Lisa was stolen from the Louvre in 1911.",
+      "label": true,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "Stolen by Vincenzo Peruggia, recovered in 1913"
+    },
+    {
+      "id": 39,
+      "text": "Shaving makes hair grow back thicker.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "Blunt edge gives appearance of thickness"
+    },
+    {
+      "id": 40,
+      "text": "The sun is a star.",
+      "label": true,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "G-type main-sequence star"
+    },
+    {
+      "id": 41,
+      "text": "Humans evolved from chimpanzees.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Humans and chimps share a common ancestor"
+    },
+    {
+      "id": 42,
+      "text": "5G networks spread COVID-19.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "Conspiracy theory with no scientific basis"
+    },
+    {
+      "id": 43,
+      "text": "The Earth is flat.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Earth is an oblate spheroid"
+    },
+    {
+      "id": 44,
+      "text": "Climate change is primarily caused by human activities.",
+      "label": true,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Scientific consensus (97%+ of climate scientists)"
+    },
+    {
+      "id": 45,
+      "text": "The Wright Brothers made the first powered flight in 1903.",
+      "label": true,
+      "category": "history",
+      "difficulty": "easy",
+      "notes": "December 17, 1903 at Kitty Hawk"
+    },
+    {
+      "id": 46,
+      "text": "You can see the curvature of the Earth from a commercial airplane.",
+      "label": true,
+      "category": "science",
+      "difficulty": "hard",
+      "notes": "Visible at cruising altitude (35,000+ ft) with wide view"
+    },
+    {
+      "id": 47,
+      "text": "Eating carrots significantly improves night vision.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "WWII propaganda - only helps if vitamin A deficient"
+    },
+    {
+      "id": 48,
+      "text": "The Hawaiian Islands are moving northwest.",
+      "label": true,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Pacific Plate moves ~7cm per year"
+    },
+    {
+      "id": 49,
+      "text": "Iron Maiden was a common medieval torture device.",
+      "label": false,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "Likely 19th century invention, no medieval evidence"
+    },
+    {
+      "id": 50,
+      "text": "Organic food is nutritionally superior to conventional food.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Studies show minimal nutritional difference"
+    },
+    {
+      "id": 51,
+      "text": "The speed of sound is faster than the speed of light.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Light is approximately 881,000 times faster"
+    },
+    {
+      "id": 52,
+      "text": "The Eiffel Tower can be 15 cm taller during summer.",
+      "label": true,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Thermal expansion of iron"
+    },
+    {
+      "id": 53,
+      "text": "Detox diets remove toxins that the body cannot eliminate naturally.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Liver and kidneys already handle detoxification"
+    },
+    {
+      "id": 54,
+      "text": "The first computer programmer was a woman named Ada Lovelace.",
+      "label": true,
+      "category": "history",
+      "difficulty": "medium",
+      "notes": "Wrote algorithms for Babbage's Analytical Engine"
+    },
+    {
+      "id": 55,
+      "text": "Alcohol kills brain cells.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Damages dendrites but doesn't kill cells directly"
+    },
+    {
+      "id": 56,
+      "text": "The Electoral College determines the US President.",
+      "label": true,
+      "category": "politics",
+      "difficulty": "easy",
+      "notes": "Constitutional process for presidential election"
+    },
+    {
+      "id": 57,
+      "text": "We swallow an average of 8 spiders per year while sleeping.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "Made-up statistic, no scientific basis"
+    },
+    {
+      "id": 58,
+      "text": "Diamonds are made of compressed coal.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Both carbon, but diamonds form much deeper"
+    },
+    {
+      "id": 59,
+      "text": "The US Constitution explicitly mentions separation of church and state.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "hard",
+      "notes": "Phrase from Jefferson's letter, not Constitution itself"
+    },
+    {
+      "id": 60,
+      "text": "Bananas grow on trees.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Banana plants are herbaceous, not trees"
+    },
+    {
+      "id": 61,
+      "text": "The COVID-19 vaccines were developed in under a year.",
+      "label": true,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "mRNA vaccines authorized December 2020"
+    },
+    {
+      "id": 62,
+      "text": "Glass is a liquid that flows slowly over time.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Glass is an amorphous solid, not a slow-flowing liquid"
+    },
+    {
+      "id": 63,
+      "text": "The Supreme Court has always had nine justices.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Started with 6, varied from 5-10 historically"
+    },
+    {
+      "id": 64,
+      "text": "Saturn's rings are solid structures.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Made of ice and rock particles"
+    },
+    {
+      "id": 65,
+      "text": "GMO foods are unsafe for human consumption.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Scientific consensus: GMOs are safe"
+    },
+    {
+      "id": 66,
+      "text": "The Second Amendment protects individual gun ownership.",
+      "label": true,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Per DC v. Heller (2008) interpretation"
+    },
+    {
+      "id": 67,
+      "text": "Lemmings commit mass suicide by jumping off cliffs.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Myth perpetuated by Disney documentary manipulation"
+    },
+    {
+      "id": 68,
+      "text": "The First Amendment protects speech from private censorship.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Only restricts government, not private entities"
+    },
+    {
+      "id": 69,
+      "text": "Ostriches bury their heads in the sand when frightened.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "They lie flat or run; head-burying is a myth"
+    },
+    {
+      "id": 70,
+      "text": "The US national debt exceeds $30 trillion.",
+      "label": true,
+      "category": "politics",
+      "difficulty": "easy",
+      "notes": "Surpassed $30T in 2022, continues to grow"
+    },
+    {
+      "id": 71,
+      "text": "Touching a baby bird will cause its mother to reject it.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Birds have poor sense of smell, will not reject"
+    },
+    {
+      "id": 72,
+      "text": "The Affordable Care Act (Obamacare) was ruled unconstitutional.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Upheld by SCOTUS in 2012, individual mandate penalty removed"
+    },
+    {
+      "id": 73,
+      "text": "Different parts of the tongue taste different flavors.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Tongue map myth - all areas taste all flavors"
+    },
+    {
+      "id": 74,
+      "text": "The US President can declare war without Congressional approval.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Constitution grants war power to Congress (with nuances)"
+    },
+    {
+      "id": 75,
+      "text": "Vitamin C cures the common cold.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "May slightly reduce duration, does not cure"
+    },
+    {
+      "id": 76,
+      "text": "The Federal Reserve is part of the federal government.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "hard",
+      "notes": "Independent agency, quasi-governmental structure"
+    },
+    {
+      "id": 77,
+      "text": "Caffeine stunts growth in children.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "No scientific evidence supports this claim"
+    },
+    {
+      "id": 78,
+      "text": "Members of Congress are exempt from insider trading laws.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "STOCK Act of 2012 made them subject to these laws"
+    },
+    {
+      "id": 79,
+      "text": "The full Moon affects human behavior.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Studies consistently show no lunar effect"
+    },
+    {
+      "id": 80,
+      "text": "Citizens United v. FEC allowed unlimited corporate campaign spending.",
+      "label": true,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "2010 decision enabled super PACs"
+    },
+    {
+      "id": 81,
+      "text": "Honey never spoils.",
+      "label": true,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Archaeologists found edible honey in Egyptian tombs"
+    },
+    {
+      "id": 82,
+      "text": "A filibuster requires continuous speaking in the US Senate.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "hard",
+      "notes": "Modern filibuster just requires threat, no speaking needed"
+    },
+    {
+      "id": 83,
+      "text": "Microwave ovens cook food from the inside out.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Microwaves penetrate but don't start from center"
+    },
+    {
+      "id": 84,
+      "text": "The 2020 US presidential election had widespread fraud that changed the outcome.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "easy",
+      "notes": "60+ court cases found no evidence of outcome-changing fraud"
+    },
+    {
+      "id": 85,
+      "text": "Humans and dinosaurs coexisted.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Dinosaurs extinct ~65 million years before humans"
+    },
+    {
+      "id": 86,
+      "text": "The Electoral College can be abolished by a simple majority vote.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Requires constitutional amendment (2/3 + 3/4 states)"
+    },
+    {
+      "id": 87,
+      "text": "An octopus has three hearts.",
+      "label": true,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Two branchial hearts and one systemic heart"
+    },
+    {
+      "id": 88,
+      "text": "Ranked choice voting is used in US federal elections nationwide.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "easy",
+      "notes": "Only some states/localities use it as of 2026"
+    },
+    {
+      "id": 89,
+      "text": "Black holes are actually visible as black objects in space.",
+      "label": false,
+      "category": "science",
+      "difficulty": "medium",
+      "notes": "Cannot be seen directly - detected by effects on surroundings"
+    },
+    {
+      "id": 90,
+      "text": "The Vice President can unilaterally reject electoral votes.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "medium",
+      "notes": "Ceremonial role only - cannot reject valid votes"
+    },
+    {
+      "id": 91,
+      "text": "Humans have five senses.",
+      "label": false,
+      "category": "science",
+      "difficulty": "hard",
+      "notes": "Edge case - humans have additional senses (balance, proprioception, etc.)"
+    },
+    {
+      "id": 92,
+      "text": "The national popular vote determines the US President.",
+      "label": false,
+      "category": "politics",
+      "difficulty": "easy",
+      "notes": "Electoral College determines president, not popular vote"
+    },
+    {
+      "id": 93,
+      "text": "A penny dropped from the Empire State Building can kill someone.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Terminal velocity too low to be lethal"
+    },
+    {
+      "id": 94,
+      "text": "Ivermectin is FDA-approved for treating COVID-19 in humans.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Approved for parasites, not COVID-19 (as of data cutoff)"
+    },
+    {
+      "id": 95,
+      "text": "The sun revolves around the Earth.",
+      "label": false,
+      "category": "science",
+      "difficulty": "easy",
+      "notes": "Earth revolves around the sun"
+    },
+    {
+      "id": 96,
+      "text": "Hydroxychloroquine is an effective treatment for COVID-19.",
+      "label": false,
+      "category": "health",
+      "difficulty": "medium",
+      "notes": "Large trials showed no benefit for COVID-19"
+    },
+    {
+      "id": 97,
+      "text": "Bananas are berries but strawberries are not.",
+      "label": true,
+      "category": "science",
+      "difficulty": "hard",
+      "notes": "Botanical definition - bananas are true berries"
+    },
+    {
+      "id": 98,
+      "text": "The blood in your veins is blue until it reaches oxygen.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "Blood is always red; veins appear blue through skin"
+    },
+    {
+      "id": 99,
+      "text": "Cleopatra lived closer in time to the Moon landing than to the construction of the Great Pyramid.",
+      "label": true,
+      "category": "history",
+      "difficulty": "hard",
+      "notes": "Pyramid ~2560 BC, Cleopatra ~30 BC, Moon 1969 AD"
+    },
+    {
+      "id": 100,
+      "text": "Muscle turns into fat if you stop exercising.",
+      "label": false,
+      "category": "health",
+      "difficulty": "easy",
+      "notes": "Muscle and fat are different tissues - cannot convert"
+    }
+  ]
+}

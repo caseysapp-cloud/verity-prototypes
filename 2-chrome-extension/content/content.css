@@ -1,0 +1,181 @@
+/* Verity Sniffer Content Styles */
+
+#verity-float-btn {
+  position: absolute;
+  z-index: 2147483647;
+  background: #1a73e8;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s;
+  user-select: none;
+}
+
+#verity-float-btn:hover {
+  background: #1557b0;
+  transform: scale(1.05);
+}
+
+#verity-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  max-width: 400px;
+  min-width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  overflow: hidden;
+}
+
+.verity-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  color: white;
+}
+
+.verity-header.verity-true { background: #28a745; }
+.verity-header.verity-false { background: #dc3545; }
+.verity-header.verity-partial { background: #ffc107; color: #333; }
+.verity-header.verity-unknown { background: #6c757d; }
+.verity-header.verity-error { background: #dc3545; }
+
+.verity-icon {
+  font-size: 20px;
+}
+
+.verity-title {
+  flex: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.verity-confidence {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.verity-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  padding: 0;
+  line-height: 1;
+}
+
+.verity-close:hover {
+  opacity: 1;
+}
+
+.verity-body {
+  padding: 12px 16px;
+}
+
+.verity-warning {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.verity-section {
+  margin-bottom: 12px;
+}
+
+.verity-section h4 {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.verity-section p {
+  margin: 0;
+  color: #333;
+}
+
+.verity-ai-warning {
+  background: #e3f2fd;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.verity-bias {
+  background: #fff3e0;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.verity-sources {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.verity-sources li {
+  margin-bottom: 4px;
+}
+
+.verity-sources a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.verity-sources a:hover {
+  text-decoration: underline;
+}
+
+.verity-warnings {
+  background: #ffebee;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.verity-warnings ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.verity-feedback {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.verity-feedback-btn {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.verity-feedback-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}

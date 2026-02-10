@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verity Sniffer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 Verity Sniffer</h1>
+      <p class="subtitle">AI-Powered Fact Checking</p>
+    </header>
+    
+    <div class="warning-banner">
+      ⚠️ AI analysis may contain errors. Always verify important claims independently.
+    </div>
+    
+    <section class="stats">
+      <h2>Session Stats</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <span class="stat-value" id="checksCount">0</span>
+          <span class="stat-label">Checks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="verifiedCount">0</span>
+          <span class="stat-label">Verified</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="flaggedCount">0</span>
+          <span class="stat-label">Flagged</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="recent">
+      <h2>Recent Checks</h2>
+      <div id="recentChecks" class="recent-list">
+        <p class="empty-state">No checks yet. Select text on any page and right-click → "Check with Verity"</p>
+      </div>
+    </section>
+    
+    <section class="settings">
+      <h2>Settings</h2>
+      <div class="setting-row">
+        <label for="apiUrl">API URL:</label>
+        <input type="text" id="apiUrl" value="http://localhost:8000" placeholder="http://localhost:8000">
+      </div>
+      <div class="setting-row">
+        <label for="modelSelect">Model:</label>
+        <select id="modelSelect">
+          <option value="gpt-4o">GPT-4o (OpenAI)</option>
+          <option value="claude-sonnet">Claude Sonnet</option>
+          <option value="gemini-flash">Gemini Flash</option>
+        </select>
+      </div>
+      <button id="saveSettings" class="btn-primary">Save Settings</button>
+    </section>
+    
+    <footer>
+      <p>v0.1.0 • <a href="#" id="clearData">Clear Data</a></p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
