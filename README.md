@@ -18,10 +18,16 @@ These four prototypes answer that question empirically.
 ## Quick Start (5 Minutes)
 
 ```bash
-cd projects/verity-prototypes
+# Clone the repo
+git clone https://github.com/caseysapp-cloud/verity-prototypes.git
+cd verity-prototypes
+
+# Copy env and add your OpenRouter API key
+cp .env.example .env
+# Edit .env and add your key from https://openrouter.ai/keys
 
 # Install dependencies
-pip install httpx python-dotenv fastapi uvicorn pillow
+pip install -r requirements.txt
 
 # Run the torture test (most important)
 cd 1-torture-test
@@ -57,8 +63,7 @@ A working browser extension so you can EXPERIENCE the product for a day.
 ```bash
 # Start backend
 cd 2-chrome-extension/api
-pip install -r requirements.txt
-python main.py
+uvicorn main:app --reload
 
 # Load extension in Chrome:
 # 1. Go to chrome://extensions
